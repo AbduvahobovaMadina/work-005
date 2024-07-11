@@ -16,7 +16,7 @@
             }
         }
     }
-    .modal{
+    .model{
         position: fixed;
         top: 50%;
         left: 50%;
@@ -34,6 +34,29 @@
         box-shadow: 0 0 25px #0005;
         opacity: 0;
         animation: model .4s ease 0s forwards;
+        .eye{
+            display: flex;
+            width: 300px;
+            justify-content: space-around;
+            height: 38px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            outline: none;
+            text-align: center;
+            align-items: center;
+            input{
+                width: 200px;
+                border: none;
+                height: 30px;
+                &:hover{
+                    border: none;
+                }
+            }
+            &:hover{
+                border: 1px solid blueviolet;
+            }
+        }
         button{
             width: 200px;
             height: 38px;
@@ -74,6 +97,28 @@ h2{
     font-size: 5vw;
     color: rgb(17, 130, 235);
     text-align: center;
+}
+.wrapper{
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    .card{
+        width: 280px;
+        background: #0002;
+        padding: 20px;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 10px;
+        .card__circle{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: url(https://fastly.picsum.photos/id/282/200/300.jpg?hmac=CVnHWoW4uSir_3zYiJzNPVs8XMSyf968WjkWvPlwu3g);
+            margin: auto;
+        }
+    }
+
 }
 .login{
     width: 400px;

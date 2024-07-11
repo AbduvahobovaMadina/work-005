@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
@@ -17,14 +20,30 @@
         </form>
     </div>
     
+    <div class="container">
+        <div class="wrapper">
+            
+        </div>
+    </div>
+
+
+
     <div class="popap">
             <div class="container">
             <div class="overlay"></div>
-            <form class="modal" action="">
-                <input type="text" class="modal__name" placeholder="name">
-                <input type="text" class="modal__username" placeholder="username">
-                <input type="password" class="modal__password" placeholder="password">
-                <input type="password" class="modal__password-confirm" placeholder="password">
+            <form class="model" action="">
+                <input required type="text" class="modal__name" placeholder="name">
+                <input required type="text" class="modal__username" placeholder="username">
+                <div class="eye">
+                    <input required type="password" class="modal__password" placeholder="password">
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-solid fa-eye-slash"></i>
+                </div>
+                <div class="eye">
+                    <input required type="password" class="modal__password-confirm" placeholder="password">
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-solid fa-eye-slash"></i>
+                </div>
                 <button type="submit">Register</button>
                 <button class="btn__close" type="button">Cancel</button>
             </form>
@@ -34,6 +53,6 @@
     
 
 
-    <script src="./js/main.js"></script>
+    <script type="module" src="./js/main.js"></script>
 </body>
 </html>
